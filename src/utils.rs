@@ -15,8 +15,6 @@ pub fn normalize(v: &mut Vec<f64>, dx: f64) {
     for vi in v.into_iter() {
         *vi = *vi / norm;
     }
-
-    println!("norm: {norm}");
 }
 
 pub fn l2product(f: &Vec<(f64, f64)>, g: &Vec<(f64, f64)>, dx: f64) -> f64 {
